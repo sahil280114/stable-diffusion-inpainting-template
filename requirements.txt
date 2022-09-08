@@ -1,0 +1,4 @@
+sanic
+git+https://github.com/huggingface/diffusers
+transformers
+scipy
