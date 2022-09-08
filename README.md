@@ -7,6 +7,8 @@ If you want to generalize this to deploy anything on Banana, [see the guide here
 
 Look at `test.py` for instructions on how to call this model locally as well as deployed on banana.
 
+### Note: You need to add your HuggingFace token to `app.py` and `download.py` to be able to get model weights from HF hub
+
 
 ## Move to prod:
 
