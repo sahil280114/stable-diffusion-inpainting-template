@@ -1,4 +1,4 @@
 sanic
-git+https://github.com/huggingface/diffusers
+diffusers==0.3.0
 transformers
 scipy
