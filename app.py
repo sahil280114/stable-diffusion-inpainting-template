@@ -44,7 +44,7 @@ def inference(model_inputs:dict) -> dict:
 
     # Run the model
     with autocast("cuda"):
-        image = model(prompt,init_image=init_image,mask_image=mask_image,strength=strength,num_inference_steps=steps,guidance_scale=guidance_scale)["sample"][0]
+        image = model(prompt,init_image=init_image,mask_image=mask_image,strength=strength,num_inference_steps=steps,guidance_scale=guidance_scale).images[0]
     
     buffered = BytesIO()
     image.save(buffered,format="JPEG")
