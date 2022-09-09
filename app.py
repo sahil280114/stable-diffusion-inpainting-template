@@ -13,7 +13,7 @@ def init():
     global model
     HF_AUTH_TOKEN = ""
     
-    model = StableDiffusionInpaintPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", revision="fp16", torch_dtype=torch.float16,use_auth_token=True).to("cuda")
+    model = StableDiffusionInpaintPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", revision="fp16", torch_dtype=torch.float16,use_auth_token=HF_AUTH_TOKEN).to("cuda")
 
 # Inference is ran for every server call
 # Reference your preloaded global model variable here.
